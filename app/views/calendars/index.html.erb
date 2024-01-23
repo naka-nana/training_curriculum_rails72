@@ -1,3 +1,4 @@
+
 <div class="form">
   <%= form_with model: @plan, url: calendars_path do |f| %>
     <div class="field">
@@ -22,6 +23,7 @@
       </div>
       <ul class="content">
         <% if day[:plans].any? %>
+
           <% day[:plans].each do |plan| %>
             <li class="plan-list">・<%= plan %></li>
           <% end %>
